@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC -//W3C//DTD XHTML TANSITIONAL//EN
+"http://www.w3.org/TR/xhtml1/DTD/xhtml-transitional.dtd">
+
+<html>
+<form name = "fr" method = "post" onsubmit="return passd();">
+<table>
+<tr><td>username</td><td><input type = "text" name = "usr"></td></tr>
+<tr><td>email id</td><td><input type = "text" name = "ema"></td></tr>
+<tr><td>password</td><td><input type = "text" name = "pass"></td></tr>
+<tr><td>phone no.</td><td><input type = "text" name = "phon"></td></tr>
+<tr><td>user id</td><td><input type = "text" name = "uid"></td></tr>
+<tr><td><input type = "submit" value="click"></td></tr>
+</table>
+</form>
+
+<script type="text/javascript">
+function passd()
+{
+var user = document.fr.usr.value;
+var pass = document.fr.pass.value;
+var ema = document.fr.ema.value;
+var uid = document.fr.usr.value;
+var phon = document.fr.phon.value;
+
+
+if(user == "")
+{
+alert("your form is incompete");
+return false;
+} 
+
+var ret=/^\W+$/;
+if(!ret.test(user))
+{
+alert("Invalid user name");
+return false;
+} 
+
+else
+{
+alert("good moring");
+return true;
+}
+}
+</script>
+</html>
